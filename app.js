@@ -6,12 +6,12 @@ let sizeTextY=document.getElementById('sizeY')
 let x=0,y=0;
 inputX.addEventListener('input',(e)=>{
   x=(500-(e.target.value))/10
-  clippy.style =` clip-path: inset(${x}% ${y}%);`
+  clippy.style =` clip-path: inset(${y}% ${x}% ${y}% ${x}%);`
   sizeTextX.textContent=e.target.value + 'px'
 })
 inputY.addEventListener('input',(e)=>{
   y=(500-(e.target.value))/10
-  clippy.style =` clip-path: inset(${x}% ${y}%);`
+  clippy.style =` clip-path: inset(${y}% ${x}% ${y}% ${x}%);`
   sizeTextY.textContent=e.target.value + 'px'
 })
 
